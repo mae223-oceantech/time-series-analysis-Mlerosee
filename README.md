@@ -6,10 +6,13 @@ Starter repository for the Week 1 Time Series Analysis lab.
 
 | File | Description |
 |------|-------------|
-| `Tidal Analysis_Python.ipynb` | Lab notebook — work here |
+| `Tidal Analysis_Python.ipynb` | **Start here** — fully written demo notebook |
+| `Tutorial_SpectralAnalysis.ipynb` | **Then here** — hands-on tutorial, you write the code |
 | `sample_data.json` | Velocity time series (CLASS10 mooring, 30-min sampling, 16,000 samples) |
 | `la_jolla_tide.json` | NOAA La Jolla tide gauge sea level — full ~100-year record, hourly, in mm |
+| `safari_waves.json` | SAFARI buoy significant wave height — central Pacific, Nov 2025–Apr 2026, ~2-hr sampling |
 | `environment.yml` | Conda environment specification |
+| `github_tutorial.pdf` | Guide to GitHub and GitHub Classroom for first-time users |
 
 ---
 
@@ -110,12 +113,25 @@ The first command activates the environment. The second registers it as a kernel
 
 ---
 
-### Step 5 — Open the notebook
+### Step 5 — Open the notebooks
 
-1. In VS Code, open the repo folder: **File → Open Folder**, navigate to your `time-series-analysis` folder, and click Open
-2. Click `Tidal Analysis_Python.ipynb` in the left file panel to open the notebook
+There are two notebooks and they should be done **in order**:
+
+**1. `Tidal Analysis_Python.ipynb` — demo (start here)**
+- Fully written — just run it and read the code and output
+- Introduces the `spectrumCB` function, power spectral density, and tidal analysis
+- No coding required — this is the "watch and understand" step
+
+**2. `Tutorial_SpectralAnalysis.ipynb` — tutorial (do this second)**
+- You write the code yourself, guided by prompts
+- Builds directly on what the demo introduced
+- Requires `la_jolla_tide.json` and `safari_waves.json` (both included in the repo)
+
+**To open a notebook in VS Code:**
+1. Open the repo folder: **File → Open Folder**, navigate to your `time-series-analysis` folder, and click Open
+2. Click the notebook file in the left file panel
 3. In the top-right corner click **Select Kernel → Select Another Kernel... → Jupyter Kernel... → mae223**
-4. Click **Run All** in the toolbar to execute all cells — plots and output will appear below each cell
+4. Click **Run All** to execute all cells
 
 > **Note:** Always run cells from top to bottom. If you see a `NameError`, it usually means an earlier cell has not been run yet. Use **Run All** to avoid this.
 
